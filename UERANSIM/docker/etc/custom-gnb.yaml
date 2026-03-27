@@ -1,0 +1,19 @@
+mcc: '@MCC@'
+mnc: '@MNC@'
+nci: '@NCI@'
+idLength: 32
+tac: @TAC@
+linkIp: @LINK_IP@
+ngapIp: @NGAP_IP@
+gtpIp: @GTP_IP@
+amfConfigs:
+  - address: @NGAP_PEER_IP@
+    port: 38412
+slices:
+  - sst: @SST_0@
+    sd: @SD_0@
+  - sst: @SST_1@
+    sd: @SD_1@
+  - sst: @SST_2@
+    sd: @SD_2@
+ignoreStreamIds: @IGNORE_STREAM_IDS@
