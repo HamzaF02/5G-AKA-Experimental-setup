@@ -1,5 +1,6 @@
 # SUCI catcher experiment
-This is an implementation of the SUCI-cather attack discussed and implemnted on multiple paper, and my thesis.
+This is an implementation of the SUCI-cather attack discussed and implemnted on multiple paper, and my thesis. This repo includes the SUCI-catcher and folder for updated UERANSIM Image creation according to .yaml
+https://github.com/aligungr/UERANSIM
 
 ## Requirements
 OAI basic nrf core network with oaisoftwareallience/oai-*:develop
