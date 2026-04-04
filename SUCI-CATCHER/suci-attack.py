@@ -337,11 +337,11 @@ def uplink(gnb_sock, amf_sock):
                     msg_type = get_nas_msg_type(nas)
 
                     if msg_type == NAS_AUTH_RESPONSE:
-                        print(f"Authentication Response — RAN-UE-NGAP-ID: {ran_ue_id}")
+                        print(f"Authentication Response — RAN-UE-NGAP-ID: {ran_ue_id} - SUCI TO UE FOUND!!!")
 
 
                     elif msg_type == NAS_AUTH_FAILURE:
-                        print(f"Authentication Failure — RAN-UE-NGAP-ID: {ran_ue_id} - SUCI TO UE FOUND!!!")
+                        print(f"Authentication Failure — RAN-UE-NGAP-ID: {ran_ue_id}")
 
             amf_sock.sctp_send(data, ppid=NAS_PPID)
 
