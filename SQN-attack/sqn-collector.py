@@ -11,7 +11,7 @@ from threading import Lock
 
 
 # Config 
-_NGAP_PDU_PROTO = NGAP_PDU_Descriptions.NGAP_PDU
+NGAP_PDU_PROTO = NGAP_PDU_Descriptions.NGAP_PDU
 
 AMF_IP      = os.getenv("AMF_IP","127.0.0.1")
 AMF_PORT    = int(os.getenv("AMF_PORT","38412"))
@@ -42,13 +42,13 @@ PROC_DOWNLINK_NAS = 4
 NAS_PPID = 60
 
 # Attack config
-N_BITS          = 4
+N_BITS          = 8
 N_SETUP_VECTORS = 2 ** N_BITS  
 
 
 # NGAP helpers
 def NGAP_PDU():
-    return deepcopy(_NGAP_PDU_PROTO)
+    return NGAP_PDU_PROTO
 
 
 def decode_ngap(data: bytes):
